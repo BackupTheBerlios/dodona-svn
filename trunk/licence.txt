@@ -1,0 +1,15 @@
+Definitions
+
+The Author - Mr C Camacho
+The application - Dodona Visual Lua IDE aka the IDE
+
+
+1) The author of the application will not be held responsible by any way for any costs or damages caused by the application or any related documentation.
+
+2) All code made using the application is the property of the person writing the code or their employer. The end product of the IDE can have any desired licence. 
+
+3) All modifications to the source code or resources of the IDE must be contributed back to the author and come under this licence. (Inclusion is entirely at the option of the author)
+
+4) copies of the IDE may not be sold without express permission of the author.
+
+5) The source code of the IDE and its resources are freely distributable 
