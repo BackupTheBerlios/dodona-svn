@@ -49,12 +49,12 @@ void VLGform::moveTo(int nx,int ny) {
 	x=nx;y=ny;
 }
 
-void VLGform::setText(char* t) {
+void VLGform::setText(const char* t) {
 	sprintf(&text[0],"%s",t); 
 	gtk_window_set_title((GtkWindow*)widget,(gchar*)t);
 }
 
-char* VLGform::getText() { return "TODO implement VGLform::getText !!"; }
+const char* VLGform::getText() { return "TODO implement VGLform::getText !!"; }
 
 void VLGform::editMode(bool e) {
 //	if (e==editing) return;

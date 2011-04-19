@@ -40,10 +40,10 @@ public:
 	VLGbase *parent; // everything except a form must have a parent
 	gulong editDownSignal;
 	gulong editMotionSignal;
-	virtual void setText(char *t)=0;
-	virtual void setInitText(char *t) { sprintf(&initialtext[0],"%s",t); }
-	virtual char* getText()=0;
-	void setClickedScript(char *t) { sprintf(&clickedScript[0],"%s",t); }
+	virtual void setText(const char *t)=0;
+	virtual void setInitText(const char *t) { sprintf(&initialtext[0],"%s",t); }
+	virtual const char* getText()=0;
+	void setClickedScript(const char *t) { sprintf(&clickedScript[0],"%s",t); }
 	virtual void onDestroyed()=0;
 	virtual void onClicked()=0;
 	virtual void moveTo(int nx,int ny)=0;

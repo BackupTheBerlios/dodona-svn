@@ -10,7 +10,7 @@ VLGbutton::VLGbutton(const char* n) {
 			| GDK_POINTER_MOTION_MASK
 			| GDK_POINTER_MOTION_HINT_MASK); 
 	gtk_widget_show (widget);
-	setMinSize(80,28);
+//	setMinSize(80,28);
 	widgets.push_back(this);
 }
 
@@ -29,9 +29,9 @@ void VLGbutton::moveTo(int nx,int ny) {
 	}
 }
 
-void VLGbutton::setText(char *t) { 
+void VLGbutton::setText(const char *t) { 
 	sprintf(&text[0],"%s",t); 
 	gtk_button_set_label((GtkButton*)widget,(gchar*)text);	
 }
 
-char* VLGbutton::getText() { }
+const char* VLGbutton::getText() { }

@@ -13,7 +13,7 @@ VLGlabel::VLGlabel(const char* n) {
 	gtk_widget_show (widget);
 	gtk_widget_show (eventBox);
 	widgets.push_back(this);
-	setMinSize(80,20);
+//	setMinSize(80,20);
 	
 	gtk_misc_set_alignment(GTK_MISC (widget),0,1);
 }
@@ -30,10 +30,10 @@ void VLGlabel::moveTo(int nx,int ny) {
 	} 
 }
 
-void VLGlabel::setText(char *t) { 
+void VLGlabel::setText(const char *t) { 
 	sprintf(&text[0],"%s",t); 
 	gtk_label_set_label((GtkLabel*)widget,(gchar*)text);	
 }
 
 
-char* VLGlabel::getText() { }
+const char* VLGlabel::getText() { }

@@ -14,7 +14,7 @@ VLGedit::VLGedit(const char* n) {
 			| GDK_POINTER_MOTION_HINT_MASK); 
 	gtk_widget_show (widget);
 	widgets.push_back(this);
-	setMinSize(80,20);
+//	setMinSize(80,20);
 
 }
 
@@ -29,11 +29,11 @@ void VLGedit::moveTo(int nx,int ny) {
 	}
 }
 
-void VLGedit::setText(char *t) { 
+void VLGedit::setText(const char *t) { 
 	sprintf(&text[0],"%s",t); 
 	gtk_entry_set_text((GtkEntry*)widget,(gchar*)text);	
 }
 
-char* VLGedit::getText() { 
+const char* VLGedit::getText() { 
 	(char*)gtk_entry_get_text((GtkEntry*)widget);	
 }

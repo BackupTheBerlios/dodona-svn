@@ -9,8 +9,8 @@ public:
 	void onClicked();
 	void add(VLGbase *w);
 	void moveTo(int x,int y);
-	void setText(char* t);
-	char* getText();
+	void setText(const char* t);
+	const char* getText();
 	void editMode(bool e);
 	void setSize(int nx,int ny);
 };

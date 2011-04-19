@@ -5,6 +5,6 @@ public:
 	void onDestroyed();
 	void onClicked();
 	void moveTo(int x,int y);
-	void setText(char *t);
-	char* getText();
+	void setText(const char *t);
+	const char* getText();
 };
